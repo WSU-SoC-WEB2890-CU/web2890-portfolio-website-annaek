@@ -1,0 +1,139 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+
+.skills {
+    margin-top: 3rem;
+
+    .skills-background {
+        background-color: $light-grey;
+        padding: 2rem 2rem;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .card {
+        max-width: 100%;
+        background-color: $white;
+        border-radius: 0;
+        -webkit-box-shadow: 0px 5px 10px 0.5px #b8b8b8;
+        box-shadow: 0px 5px 10px 0.5px #b8b8b8;
+        transition: all 0.3s ease-in-out;
+
+
+        &:hover {
+            -webkit-box-shadow: 0px 5px 10px 0.5px $secondary;
+            box-shadow: 0px 5px 10px 0.5px $secondary;
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 0.5rem 0.5rem;
+            text-align: center;
+
+            i {
+                font-size: 5rem !important;
+                color: $secondary;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            .card-body {
+                i {
+                    font-size: 2rem !important;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+
+        /* Equal width */
+        .col {
+            -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            max-width: 100%;
+        }
+
+        /* Add gutters */
+        .col {
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+    }
+
+    @include media-breakpoint-down(sm) {
+
+        /* Equal width */
+        .col {
+            -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            max-width: 100%;
+        }
+
+        /* Add gutters */
+        .col {
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+
+        .mob {
+            width: 22%;
+        }
+    }
+
+
+
+}
+
+.tech-skills {
+    margin-top: 3rem;
+
+    .skills-background {
+        background-color: $light-grey;
+        padding: 2rem 3rem;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .list-group {
+        margin: 1rem 1rem;
+    }
+
+
+    .list-group-item {
+        border: none;
+        background-color: transparent;
+
+        img {
+            width: 6rem;
+        }
+    }
+
+
+    @include media-breakpoint-down(md) {
+        .list-group-item {
+            img {
+                width: 4rem;
+            }
+        }
+    }
+
+}

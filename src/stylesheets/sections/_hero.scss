@@ -1,0 +1,139 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.hero {
+    font-family: 'Titillium Web', sans-serif;
+    background: url('../../images/hero.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    margin-bottom: 3rem;
+
+    .container {
+        padding: 0;
+    }
+
+    .divider{
+        width:80px;
+        height:auto;
+        display:inline-block;
+    }
+
+    .hero-btn {
+        margin-left: 2rem;
+    }
+
+    .hero-follow-links {
+        margin-top: 22rem;
+    }
+
+    .social-icons {
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        font-size: 2rem;
+        justify-content: flex-end;
+    }
+
+    .fl-links {
+        font-family: Tittillium Web, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $white;
+        display: inline;
+    }
+
+    .link-title {
+        width: 150px;
+    }
+
+    .hero-links {
+        width: 150px;
+
+        a {
+            color: $white;
+            text-decoration: none;
+            margin: 0 0.5rem 0 0.5rem;
+
+            &:hover {
+                color: $secondary;
+            }
+            
+        }
+    }
+
+    .hero-down {
+        text-align: center;
+        font-size: 3rem;
+        a {
+            color: $secondary;
+            text-decoration: none;
+
+            &:hover {
+                color: $white;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            visibility: visible;
+        }
+
+        @include media-breakpoint-down(ld) {
+            visibility: hidden;
+        }
+        
+    }
+
+
+    @include media-breakpoint-down(sm) {
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            padding: 0;
+        }
+        .hero-btn{
+            display: none;
+        }
+
+        .link-title {
+            display: none;
+        }
+
+        .hero-down {
+            display: none;
+        }
+
+        .hero-follow-links {
+            position: absolute;
+            bottom: 5%;
+            width: 100%;
+        }
+
+        .social-icons {
+            font-size: 1.5rem;
+            width: 100%;
+            justify-content: center;
+            margin: 0;
+        }
+
+    }
+
+    @include media-breakpoint-down(md) {
+        .hero-follow-links {
+            margin-top: 15rem;
+        }
+
+        .divider {
+            display: none;
+        }
+
+        .social-icons{
+            margin-bottom: 1rem;
+        }
+    }
+
+}

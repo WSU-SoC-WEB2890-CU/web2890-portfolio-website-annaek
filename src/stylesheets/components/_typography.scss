@@ -1,0 +1,271 @@
+@use '../custom'as *;
+@use '../components/mixins'as *;
+
+
+.name-footer {
+    color: $little-light-grey;
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+
+.display-1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 0.7rem;
+    padding-top: 19rem;
+    font-size: 3rem !important;
+    color: $white;  
+    
+    .hero-hyphen {
+        font-weight: 700;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-top: 17rem;
+        font-size: 2rem !important;
+        margin-bottom: 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 17rem;
+        font-size: 2rem !important;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+
+.display-2 {
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 1rem;
+
+    &--intro {
+        font-weight: 600;
+        color: $white;
+        padding-left: 3.7rem;
+        
+    }
+
+    .hero-name-color {
+        font-weight: 700;
+        color: $secondary;
+        font-size: 5rem !important;
+    }
+
+    &--description {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $white;
+        padding-left: 3.7rem;
+        padding-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        &--intro {
+            font-weight: 500;
+        }
+
+        &--description {
+            padding-bottom: 0;
+            font-size: 1.5rem !important;
+            font-weight: 400;
+        }
+
+        .hero-name-color {
+            font-size: 3.5rem !important;
+            font-weight: 600;
+        }
+
+        .hero-btn {
+            width: 100%;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+
+        &--intro {
+            padding-left: 0;
+        }
+
+        &--description {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-bottom: 0;
+            font-size: 1.2rem !important;
+            text-align: center;
+        }
+
+        .hero-name-color {
+            font-size: 3rem !important;
+        }
+
+        .hero-hyphen {
+            font-weight: 400;
+        }
+    }
+    
+}
+
+.display-3 {
+    font-family: Tittuillium Web, sans-serif;
+    text-transform: capitalize;
+
+    &--title {
+      font-size: 1.2rem;
+      //text-transform: capitalize;
+      font-weight: 600;
+      display: inline-block;
+  
+      @include media-breakpoint-up(lg) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+.heading-line::before {
+    content: "";
+    width: 10rem;
+    height: 0.3rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $secondary;
+
+    @include media-breakpoint-down(sm) {
+        width: 6rem;
+    }
+  }
+  
+  .section-heading {
+    margin-bottom: 3.5rem;
+  }
+
+  .display-6 {
+    font-family: Tittuillium Web, sans-serif;
+    text-transform: capitalize;
+    font-size: 1.8rem !important;
+    font-weight: 900;
+    color: $secondary;
+    margin-bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1.5rem !important;
+        text-align: center;
+    }
+
+  }
+
+  .display-7 {
+    font-family: Tittuillium Web, sans-serif;
+    text-transform: capitalize;
+    font-size: 1.8rem !important;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 0;
+    padding-top: 1rem;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1.5rem !important;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+  }
+
+  .display-8 {
+    font-family: Tittuillium Web, sans-serif;
+    text-transform: capitalize;
+    font-size: 1.8rem !important;
+    font-weight: 700;
+    color: $primary;
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1.5rem !important;
+        text-align: center;
+    }
+
+  }
+
+  .display-9 {
+    font-family: Tittuillium Web, sans-serif;
+    font-size: 1.5rem !important;
+    font-weight: 600;
+    color: $primary;
+    margin: 1.5rem 0.5rem;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1.2rem !important;
+        text-align: center;
+    }
+
+  }
+
+  .lead {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: $white;
+    margin-bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1.2rem !important;
+        padding: 0 2rem 1rem 2rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 1.2rem !important;
+        padding: 0 2rem 1rem 1rem;
+    }
+  }
+
+  .about-me-lead {
+    color: $secondary;
+    font-weight: 700;
+  }
+
+  .card-title {
+    font-family: Tittuillium Web, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.work-description-text {
+    margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    
+    li {
+        line-height: 2;
+    }
+}
+
+

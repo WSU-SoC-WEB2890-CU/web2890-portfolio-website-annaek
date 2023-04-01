@@ -1,0 +1,47 @@
+@use '../custom'as *;
+@use '../components/mixins'as *;
+
+
+.resent-projects {
+    margin-top: 3rem;
+
+    .card {
+        background-color: $white;
+        border-radius: 0;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        transition: all 0.3s ease-in-out;
+        margin-top: 0;
+
+        &:hover {
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .card-body {
+            padding: 1rem 1.5rem 1rem 1.5rem;
+        }
+
+
+        .card-img-top {
+            margin-top: 0 !important;
+            text-align: center;
+            margin-top: 2rem;
+            padding: 0.5rem;
+
+        }
+    }
+
+    .card-footer {
+        background-color: white;
+        border: none;
+        padding-bottom: 2rem;
+    }
+
+    .btn {
+        margin-left: 0.5rem;
+
+        @include media-breakpoint-down(md) {
+            margin-left: 0;
+        }
+    }
+}

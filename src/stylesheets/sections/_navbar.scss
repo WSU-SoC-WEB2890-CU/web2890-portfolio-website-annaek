@@ -1,0 +1,110 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 7rem;
+    //width: 100%;
+
+    .container {
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: $little-light-grey;
+                font-size: 1.2rem;
+                font-weight: 600;
+                text-transform: capitalize;
+                text-align: end;
+                letter-spacing: 0.1rem;
+                padding: 0.5rem 0.5rem;
+                padding-left: 1rem;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+
+    .active {
+        color: $secondary;
+    }
+
+    .navbar-brand {
+        padding: 0;
+        margin: 0;
+
+        .nav-logo {
+            width: 40%;
+            height: 40%;
+        }
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .navbar-toggler-icon {
+        outline: none;
+        color: $secondary !important;
+        font-size: 1.7rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        .container {
+            padding: 0 0.9rem 0 0.9rem;
+        }
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    font-size: 1.2rem;
+                    text-align: center;
+
+                }
+            }
+        }
+
+        .navbar-brand {
+            .nav-logo {
+                width: 30%;
+                height: 30%;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    font-size: 1.2rem;
+                    text-align: center;
+
+                }
+            }
+        }
+
+        .navbar-brand {
+            .nav-logo {
+                width: 30%;
+                height: 30%;
+            }
+        }
+
+        .navbar-toggler-icon {
+            padding-top: 0.5rem;
+            outline: none;
+            color: $secondary !important;
+            font-size: 2.1rem;
+        }
+    }
+}

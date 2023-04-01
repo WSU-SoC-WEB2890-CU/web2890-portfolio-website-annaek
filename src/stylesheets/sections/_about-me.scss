@@ -1,0 +1,174 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+
+.about-me {
+    
+    margin-top: 3rem;
+
+    .about-me-background{
+        background-color: $mid-grey;
+
+    }
+
+    .container {
+        width: 100%;
+        padding: 3rem 0 3rem 0;
+        color: $white;
+
+    }
+
+    .about-img {
+        padding-left: 30%;
+        padding-top: 20%;
+        img {
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    .about-btn {
+        width: 100%;
+        display: inline-block;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        .btn {
+            margin-right: 3rem;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+
+        .container {
+            width: 100%;
+            padding: 2rem 0 2rem 0;
+        }
+
+        .about-img {
+            padding: 0;
+            
+            img {
+                width: 90%;
+                height: 90%;
+                border-radius: 50%;
+                justify-content: center;               
+            }
+        }
+
+    }
+
+
+    @include media-breakpoint-down(sm) {
+
+        .container {
+            width: 100%;
+            padding: 2rem 0 2rem 0;
+        }
+
+        .about-img {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            
+            img {
+                width: 80%;
+                height: 80%;
+                border-radius: 50%;
+                justify-content: center;               
+            }
+        }
+
+        .about-btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+            .btn {
+                margin-right: 1rem;
+            }
+        }
+
+    }
+ 
+}
+
+
+.about {
+    background-color: $mid-grey;
+    padding: 10rem 0 3rem 0;
+
+
+    .display-3 {
+        color: $white;
+    }
+
+    .lead {
+        margin-bottom: 1rem;
+    }
+
+    .about-text {
+        margin-left: 2rem;
+    }
+
+    .btn {
+        margin-left: 2rem;
+    }
+
+    .about-btn {
+        margin-top: 5rem;
+    }
+
+    ul.about-list {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 1em;
+    }
+    ul.about-list > li:before {
+        display: inline-block;
+        content: "-";
+        width: 1em;
+        margin-left: -1em;
+    }
+
+    .about-img {
+        img {
+            border-radius: 10%
+        }
+    }
+    .about-links {
+        font-size: 2rem;
+        margin-top: 1rem;
+        text-align: center;
+        a {
+            color: $white;
+            margin-left: 0.2rem;
+
+            &:hover {
+                color: $secondary;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 1rem;
+        }
+    }
+
+}
+
+.work-experience {
+    margin-top: 3rem;
+}
+
+.certifications {
+    margin-top: 3rem;
+
+
+    img {
+        width: 50%;
+        text-align: center;
+    }
+}

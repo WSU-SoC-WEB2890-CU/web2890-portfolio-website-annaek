@@ -1,0 +1,212 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+
+.btn {
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    a:link {
+        text-decoration: none;
+    }
+}
+
+.btn2 {
+    background-color: $white !important;
+    color: $primary !important;
+    border: 1px solid $white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0 !important;
+    transition: all 0.3s ease-in-out;
+
+    a {
+        color: $primary;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 0 0.5rem 0 0.5rem;
+        font-size: 1.6rem;
+    }
+
+    &:hover {
+        background-color: $secondary !important;
+        color: $primary;
+        border: 1px solid $primary;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 0.8rem 1rem;
+
+        a {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    }
+}
+
+
+.btn3 {
+    //background-color: $secondary !important;
+    color: $white !important;
+    border: 1.5px solid $white !important;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0 !important;
+    transition: all 0.3s ease-in-out;    
+
+    a {
+        color: $white;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 0 0.5rem 0 0.5rem;
+        font-size: 1.6rem;
+
+    }
+
+    &:hover {
+        background-color: $white !important;
+        a {
+            color: $primary;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 0.8rem 1rem;
+
+        a {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    }
+}
+
+
+.btn4 {
+    background-color: $white !important;
+    color: $primary !important;
+    border: 1px solid $white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0 !important;
+    transition: all 0.3s ease-in-out;
+
+    a {
+        color: $primary;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 0 0.5rem 0 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    &:hover {
+        background-color: $secondary !important;
+        color: $primary;
+        border: 1px solid $primary;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 0.8rem 1rem;
+
+        a {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 0.8rem 1rem;
+
+        a {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+}
+
+.btn5 {
+    //background-color: $secondary !important;
+    color: $white !important;
+    border: 1.5px solid $white !important;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0 !important;
+    transition: all 0.3s ease-in-out;    
+
+    a {
+        color: $white;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 0 0.5rem 0 0.5rem;
+        font-size: 1.2rem;
+
+    }
+
+    &:hover {
+        background-color: $white !important;
+        a {
+            color: $primary;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 0.8rem 1rem;
+
+        a {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 0.8rem 1rem;
+
+        a {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+}
+
+.btn6 {
+    //background-color: $secondary !important;
+    color: $secondary !important;
+    border: 1.5px solid $secondary !important;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0 !important;
+    transition: all 0.3s ease-in-out;    
+
+    a {
+        color: $secondary;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 0 0.5rem 0 0.5rem;
+        font-size: 1.2rem;
+
+    }
+
+    &:hover {
+        border: 1.5px solid $primary !important;
+        a {
+            color: $primary;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 0.5rem 0.8rem;
+
+        a {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 0.8rem 1rem;
+
+        a {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+}

@@ -7,22 +7,368 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
   <meta name="description" content="TODO: Portfolio website ...">
-
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./assets/main.css" />
+  <link rel="stylesheet" href="./assets/fontawesome.css" />
   <link rel="stylesheet" href="./stylesheets/main.scss">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d70e42114e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Portfolio Website
-  </h1>
-
-  <script type="module" src="./javascripts/main.js"></script>
+  <!-- THE NAVBAR SECTION -->
+  <nav class="navbar navbar-expand-lg navbar-light menu shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo/logo.png" alt="logo image" class="nav-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- THE NAVBAR SECTION ENDS -->
+  <!-- THE HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="row hero-title">
+        <div class="col-lg-9 col-md-10 col-sm-12">
+          <h1 class="display-1">
+            <span class="hero-hyphen">&#8212; I'm </span>
+          </h1>
+          <h2 class="display-2">
+            <span class="display-2--intro hero-name-color">Anna</span>
+          </h2>
+          <h3 class="display-2--description lh-base">
+            | UX/UI Designer | Web Developer |
+          </h3>
+          <div class="col-lg-7 col-md-12 col-sm-12 text-center hero-btn">
+            <button type="button" class="btn btn2 btn-lg">
+              <a class="btn-links" href="contact-us.html">
+                My projects
+              </a>
+            </button>
+            <div class="divider"></div>
+            <button type="button" class="btn btn3 btn-outline-hero btn-lg">
+              <a class="btn-links" href="contact-us.html">
+                Contact Me
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12 hero-follow-links">
+        <div class="social-icons">
+          <div class="link-title">
+            <p class="h5 fl-links">Follow me: </p>
+          </div>
+          <div class="hero-links">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-6 col-sm-12 hero-down">
+        <a href="#about">
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- THE HERO SECTION ENDS -->
+  <!--HOW DO I WORK-->
+  <section id="how-do-i-work" class="how-do-i-work">
+    <div class="container">
+      <div class="row text-center section-heading">
+        <h1 class="display-3 fw-bold">How do I work</h1>
+        <div class="heading-line mb-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
+          <div class="card">
+            <div class="card-img">
+              <img src="images/how_do_i_work/idea.gif" class="card-img-top" alt="idea generation">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Idea Generation</h5>
+              <p class="card-text">I will define your goals, your audience, and your brand.
+                I then generate ideas for your website.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
+          <div class="card">
+            <div class="card-img">
+              <img src="images/how_do_i_work/search.gif" class="card-img-top" alt="research">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Research</h5>
+              <p class="card-text">I will analyze the requirements and make the project schedule.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
+          <div class="card">
+            <div class="card-img">
+              <img src="images/how_do_i_work/planning.gif" class="card-img-top" alt="planning">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Planning</h5>
+              <p class="card-text">I will make requirements documents, a wireframe of the page, a clickable prototype,
+                and a sitemap.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
+          <div class="card">
+            <div class="card-img">
+              <img src="images/how_do_i_work/implement.gif" class="card-img-top" alt="implement">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Implement</h5>
+              <p class="card-text">I will build your website, using the latest technologies and best practices.
+                I will make sure your website is responsive, fast, and secure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--HOW DO I WORK ENDS-->
+  <!--ABOUT ME-->
+  <section id="about-me" class="about-me shadow">
+    <div class="row text-center section-heading">
+      <h1 class="display-3 fw-bold">About Me</h1>
+      <div class="heading-line mb-1"></div>
+    </div>
+    <div class="about-me-background">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="about-img">
+              <img src="images/about-me.png" alt="about me" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <div class="about-text">
+              <h6 class="display-6">Hello World!</h6>
+              <p class="lead">
+                My name is Anna Ek. I am UI/UX designer and front-end web developer.
+                I create easy-to-use yet awesome websites, web apps, and phone apps for great companies, just like
+                yours.
+                I am collaborative, so I get on well with engineers, designers, project managers, and clients.
+                I am not afraid of challenges and I am always ready to learn new things.
+              </p>
+              <p class="lead">
+                Have a look at my <span class="about-me-lead">Resume</span> or <span
+                  class="about-me-lead">Contact</span> me for a chat.
+              </p>
+            </div>
+            <div class="about-btn">
+              <button type="button" class="btn btn4">
+                <a class="btn-links" href="images/resume/AnnaEk_23.pdf" download>
+                  Download Resume
+                </a>
+              </button>
+              <button type="button" class="btn btn5 btn-outline-hero">
+                <a class="btn-links" href="contact-us.html">
+                  Contact Me
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--ABOUT ME ENDS-->
+  <!--SKILLS-->
+  <section id="skills" class="skills">
+    <div class="row text-center section-heading">
+      <h1 class="display-3 fw-bold">Skills</h1>
+      <div class="heading-line mb-1"></div>
+      <h3 class="display-3--title mt-1">Here are a few technologies I've been working with recently:</h3>
+    </div>
+    <div class="skills-background">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-7 row-cols-sm-3 g-2 g-lg-2">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <i class="fa-brands fa-html5 fa-4x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <i class="fa-brands fa-css3-alt fa-4x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <i class="fa-brands fa-square-js fa-4x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <i class="fa-brands fa-bootstrap fa-4x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <i class="fa-brands fa-vuejs fa-4x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <i class="fa-brands fa-java fa-4x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mob">
+              <div class="card-body">
+                <i class="fa-brands fa-node-js fa-4x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--SKILLS ENDS-->
+  <!--RESENT PROJECTS-->
+  <section id="resent-projects" class="resent-projects">
+    <div class="row text-center section-heading">
+      <h1 class="display-3 fw-bold">Resent Projects</h1>
+      <div class="heading-line mb-1"></div>
+    </div>
+    <div class="portfolio-background">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/portfolio/bai-sm.jpg" class="card-img-top" alt="bai-project" />
+              <div class="card-body">
+                <h5 class="card-title">BAI Security Website</h5>
+                <p class="card-text">
+                  I am creating a website for the company BAI Security. This is a company that provides IT security services to the public and private sectors. For this project, I will use HTML, Sass, JavaScript, and Bootstrap.
+                </p>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn6 btn-outline-hero">
+                  <a class="btn-links" href="">
+                    Project Details
+                  </a>
+                </button>
+                <button type="button" class="btn btn6 btn-outline-hero">
+                  <a class="btn-links" href=" ">
+                    Visit Website
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/portfolio/StellaWeb.jpg" class="card-img-top" alt="stella-project" />
+              <div class="card-body">
+                <h5 class="card-title">Stella prototype</h5>
+                <p class="card-text">
+                  I created a prototype for an architecture company Stella. For the prototype, I used Adobe XD and Adobe Photoshop to retouch images.
+                </p>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn6 btn-outline-hero">
+                  <a class="btn-links" href="">
+                    Project Details
+                  </a>
+                </button>
+                <button type="button" class="btn btn6 btn-outline-hero">
+                  <a class="btn-links" href=" ">
+                    View Prototype
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--RESENT PROJECTS ENDS-->
+  <!-- FOOTER -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="row text-white">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="footer-section">
+            <img src="images/logo/logo.png" alt="Logo" class="footer-logo" />
+            <h3 class="name-footer">Anna Ek</h3>
+            <div class="social-icons align-item-center">
+              <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-square-github"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="footer-section additional-links ">
+            <ul class="quick-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom pt-5 pb-2">
+      <div class="container">
+        <div class="row text-center text-white">
+          <div class="col-12">
+            <div class="footer-bottom__copyright">
+              <p>
+                <span> Copyright &copy;</span><span>2023 | Coded By Anna Ek</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER ENDS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+  <!-- <script type="module" src="./javascripts/main.js"></script> -->
 </body>
+
 </html>
