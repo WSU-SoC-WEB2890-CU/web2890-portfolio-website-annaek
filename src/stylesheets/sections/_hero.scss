@@ -3,7 +3,7 @@
 
 .hero {
     font-family: 'Titillium Web', sans-serif;
-    background: url('../../images/hero.jpg') no-repeat center center fixed;
+    background: url(../../images/hero.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     position: relative;
@@ -85,7 +85,6 @@
         }
         
     }
-
 
     @include media-breakpoint-down(sm) {
 
