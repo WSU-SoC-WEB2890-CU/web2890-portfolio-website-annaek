@@ -101,6 +101,8 @@
 
 }
 
+
+/////////////ABOUT.HTML SECTION////////////////////
 .tech-skills {
     margin-top: 3rem;
 
@@ -113,26 +115,34 @@
         padding: 0;
     }
 
-    .list-group {
-        margin: 1rem 1rem;
+
+    .skills-img-brands {
+        margin-top: 1rem;
+        padding: 0;
+
     }
 
+    .skill-img-brand {
+        width: 4rem;
+        display: inline-block !important;
+        margin-left: 1.5rem;
 
-    .list-group-item {
-        border: none;
-        background-color: transparent;
-
-        img {
-            width: 6rem;
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
         }
+        
     }
 
+    @include media-breakpoint-down(sm) {
+        .skills-img-brands {
+            margin-top: 1rem;
+            padding: 0;
+            text-align: center;
+        }
 
-    @include media-breakpoint-down(md) {
-        .list-group-item {
-            img {
-                width: 4rem;
-            }
+        .skill-img-brand {
+            margin-left: 0;
         }
     }
 

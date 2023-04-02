@@ -1,12 +1,13 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
 
-.footer {
+.footer-bottom {
     background-color: $footer;
     color: $light-grey;
     font-family: 'Titillium Web', sans-serif;
     padding: 1.2rem 0;
     margin-top: 7rem;
+    width: auto;
 
     .container {
         padding: 0;

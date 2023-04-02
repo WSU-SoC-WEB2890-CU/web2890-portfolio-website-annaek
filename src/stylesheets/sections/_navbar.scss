@@ -1,6 +1,10 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
 
+
+.navbar {
+    width: 100%;
+}
 .menu {
     background-color: rgba(0, 0, 0, 0.9);
     font-family: 'Titillium Web', sans-serif;
@@ -8,7 +12,7 @@
     //width: 100%;
 
     .container {
-        padding: 10px;
+        padding: 0.5rem;
     }
 
     .navbar-nav {
@@ -32,7 +36,7 @@
     }
 
     .active {
-        color: $secondary;
+        color: $secondary !important;
     }
 
     .navbar-brand {

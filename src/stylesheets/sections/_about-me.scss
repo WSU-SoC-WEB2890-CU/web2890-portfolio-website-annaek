@@ -1,7 +1,7 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
 
-
+//////////////////////ABOUT-ME SECTION//////////////////////
 .about-me {
     
     margin-top: 3rem;
@@ -84,11 +84,11 @@
         .about-btn {
             display: flex;
             justify-content: center;
-            margin-top: 2rem;
+            margin-top: 1.5rem;
             margin-bottom: 2rem;
 
             .btn {
-                margin-right: 1rem;
+                margin-right: 2rem;
             }
         }
 
@@ -96,7 +96,7 @@
  
 }
 
-
+//////////////////////ABOUT.HTML//////////////////////
 .about {
     background-color: $mid-grey;
     padding: 10rem 0 3rem 0;
@@ -119,7 +119,8 @@
     }
 
     .about-btn {
-        margin-top: 5rem;
+        display: inline-block;
+        margin-top: 4rem;
     }
 
     ul.about-list {
@@ -157,18 +158,45 @@
         }
     }
 
+    .certifications {
+        margin-top: 3rem;
+
+
+        img {
+            width: 50%;
+            text-align: center;
+        }
+    }
+
+
+    @include media-breakpoint-down(sm) {
+
+        .about-text {
+            margin-left: 0;
+        }
+
+        .btn {
+            margin-left: 0.5rem;
+        }
+
+        .about-btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        ul.about-list {
+            list-style: none;
+            margin-left: 1rem;
+            padding-left: 1em;
+        }
+
+    }
+
 }
 
+        
 .work-experience {
     margin-top: 3rem;
-}
 
-.certifications {
-    margin-top: 3rem;
-
-
-    img {
-        width: 50%;
-        text-align: center;
-    }
 }
