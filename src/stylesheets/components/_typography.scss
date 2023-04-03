@@ -216,6 +216,21 @@
 
   }
 
+
+    .display-10 {
+        font-family: Tittuillium Web, sans-serif;
+        font-size: 1.3rem !important;
+        font-weight: 600;
+        padding: 1.4rem 0;
+        color: $primary;
+        text-align: start;
+    
+        @include media-breakpoint-down(sm) {
+            font-size: 1.1rem !important;
+        }
+    
+    }
+
   .lead {
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;

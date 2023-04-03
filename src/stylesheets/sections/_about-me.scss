@@ -3,10 +3,10 @@
 
 //////////////////////ABOUT-ME SECTION//////////////////////
 .about-me {
-    
+
     margin-top: 3rem;
 
-    .about-me-background{
+    .about-me-background {
         background-color: $mid-grey;
 
     }
@@ -21,6 +21,7 @@
     .about-img {
         padding-left: 30%;
         padding-top: 20%;
+
         img {
             width: 80%;
             height: 80%;
@@ -49,12 +50,12 @@
 
         .about-img {
             padding: 0;
-            
+
             img {
                 width: 90%;
                 height: 90%;
                 border-radius: 50%;
-                justify-content: center;               
+                justify-content: center;
             }
         }
 
@@ -72,12 +73,12 @@
             display: flex;
             justify-content: center;
             padding: 0;
-            
+
             img {
                 width: 80%;
                 height: 80%;
                 border-radius: 50%;
-                justify-content: center;               
+                justify-content: center;
             }
         }
 
@@ -93,7 +94,7 @@
         }
 
     }
- 
+
 }
 
 //////////////////////ABOUT.HTML//////////////////////
@@ -128,7 +129,8 @@
         margin-left: 0;
         padding-left: 1em;
     }
-    ul.about-list > li:before {
+
+    ul.about-list>li:before {
         display: inline-block;
         content: "-";
         width: 1em;
@@ -140,10 +142,12 @@
             border-radius: 10%
         }
     }
+
     .about-links {
         font-size: 2rem;
         margin-top: 1rem;
         text-align: center;
+
         a {
             color: $white;
             margin-left: 0.2rem;
@@ -158,14 +162,9 @@
         }
     }
 
-    .certifications {
-        margin-top: 3rem;
+    .cert-container {
+        margin-bottom: 5rem;
 
-
-        img {
-            width: 50%;
-            text-align: center;
-        }
     }
 
 
@@ -195,7 +194,12 @@
 
 }
 
-        
+.certifications {
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+}
+
+
 .work-experience {
     margin-top: 3rem;
 

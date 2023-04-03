@@ -2,14 +2,12 @@
 @use '../components/mixins' as *;
 
 
-.navbar {
-    width: 100%;
-}
 .menu {
     background-color: rgba(0, 0, 0, 0.9);
     font-family: 'Titillium Web', sans-serif;
     margin-bottom: 7rem;
     //width: 100%;
+    position: fixed;
 
     .container {
         padding: 0.5rem;

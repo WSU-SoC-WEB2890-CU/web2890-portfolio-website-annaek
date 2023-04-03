@@ -1,0 +1,141 @@
+@use '../custom'as *;
+@use '../components/mixins'as *;
+
+
+.contact {
+    background-color: $mid-grey;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+    color: $white;
+    text-align: center;
+    margin-bottom: 0;
+
+    .row {
+        display: flex;
+    }
+
+    .col {
+        flex: 1;
+        padding: 0;
+        border: solid 1px $mid-grey;
+    }
+
+    .form-2 {
+        background-color: $little-light-grey;
+    }
+
+
+    .contact-form {
+        background-color: $white;
+        position: relative;
+        margin-left: 0;
+        padding: 0 2rem 2rem 1.5rem;
+
+    }
+
+    .underline-txt {
+        text-decoration: underline;
+        text-decoration-color: $secondary;
+    }
+
+    .contact-icons{
+        color: $primary;
+        font-size: 1.3rem;
+        
+    }
+
+    ul>li {
+        font-family: Titillium Web, sans-serif;
+        text-align: start;
+        color: $primary;
+        list-style: none !important;
+        padding: 0;
+        margin: 0;
+        line-height: 2;
+    }
+
+    a {
+        color: $primary;
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-decoration: none;
+        padding-left: 0.7rem;
+
+    }
+
+    i {
+        color: $primary;
+        font-size: 1.3rem;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+
+    .contact-subheading {
+        padding-left: 1.5rem;
+    }
+
+    .contact-lead {
+        font-family: Titillium Web, sans-serif;
+        text-align: start;
+        font-size: 0.9rem;
+        color: $primary;
+        padding-top: 0;
+    }
+
+
+
+    .form-group {
+        position: relative;
+        margin-bottom: 1rem;
+        padding-bottom: 4rem;
+
+        .btn {    
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    .form-control {
+        font-family: Tillium Web, sans-serif;
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+
+
+        &:focus {
+            box-shadow: none;
+            border-color: $secondary;
+        }
+
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 10rem;
+
+        .row {
+            display: block;
+        }
+
+        .form-2 {
+            padding-top: 2rem;
+            padding-bottom: 7rem;
+        }
+
+        .col {
+            border: none;
+        }
+
+        .display-3 {
+            font-size: 1.6rem !important;
+        }
+    }
+
+}

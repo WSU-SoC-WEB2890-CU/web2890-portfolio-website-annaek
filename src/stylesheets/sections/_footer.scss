@@ -6,7 +6,7 @@
     color: $light-grey;
     font-family: 'Titillium Web', sans-serif;
     padding: 1.2rem 0;
-    margin-top: 7rem;
+    //margin-top: 7rem;
     width: auto;
 
     .container {
@@ -29,6 +29,7 @@
                 padding: 0.5rem 0.5rem;
                 padding-left: 1rem;
                 transition: all 0.3s ease-in-out;
+
                 &:hover {
                     color: $secondary;
                 }
@@ -40,16 +41,17 @@
         color: $secondary;
     }
 
-    .social-icons > a {
+    .social-icons>a {
         color: $white;
         font-size: 1.5rem;
         margin: 0 0.3rem;
         transition: all 0.3s ease-in-out;
-            &:hover {
-                color: $secondary;
-            }
+
+        &:hover {
+            color: $secondary;
+        }
     }
-    
+
 
     .quick-links {
         letter-spacing: 0.1rem;
@@ -70,14 +72,15 @@
         padding-right: 0;
 
 
-            a {
-                color: $little-light-grey;
-                text-decoration: none;
-                transition: all 0.3s ease-in-out;
-                &:hover {
-                    color: $secondary;
-                }
+        a {
+            color: $little-light-grey;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: $secondary;
             }
+        }
     }
 
     .footer-bottom__copyright {
@@ -102,6 +105,7 @@
             width: 30%;
             height: 30%;
         }
+
         .additional-links {
             display: none;
         }
@@ -110,12 +114,12 @@
             text-align: center;
         }
 
-        .social-icons > a{
+        .social-icons>a {
             justify-content: center;
             padding-top: 1.2rem;
             font-size: 2.2rem;
         }
-      
+
     }
 
 }

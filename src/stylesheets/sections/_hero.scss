@@ -17,17 +17,17 @@
         height: 100vh;
     }
 
-    .divider{
-        width:80px;
-        height:auto;
-        display:inline-block;
+    .divider {
+        width: 80px;
+        height: auto;
+        display: inline-block;
     }
 
     .hero-btn {
         margin-left: 2rem;
     }
 
-    .hero-follow-links{
+    .hero-follow-links {
         padding: 0;
         position: absolute;
         bottom: 3.5rem;
@@ -65,7 +65,7 @@
             &:hover {
                 color: $secondary;
             }
-            
+
         }
     }
 
@@ -74,6 +74,7 @@
         text-align: center;
         font-size: 2rem;
         bottom: 1rem;
+
         a {
             color: $secondary;
             text-decoration: none;
@@ -90,7 +91,7 @@
         @include media-breakpoint-down(ld) {
             visibility: hidden;
         }
-        
+
     }
 
     @include media-breakpoint-down(sm) {
@@ -101,9 +102,11 @@
             //width: 100%;
             padding: 0;
         }
-        .hero-btn{
+
+        .hero-btn {
             display: none;
         }
+
         .hero-follow-links {
             width: 100%;
             align-items: center;
@@ -122,7 +125,7 @@
             font-size: 1.2rem;
             width: 100%;
             justify-content: center;
-            
+
 
             a {
                 margin: 0 0.5rem 0 0.5rem;
@@ -140,7 +143,7 @@
             display: none;
         }
 
-        .social-icons{
+        .social-icons {
             margin-bottom: 1rem;
         }
     }
