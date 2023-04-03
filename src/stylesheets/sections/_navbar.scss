@@ -2,6 +2,10 @@
 @use '../components/mixins' as *;
 
 
+// .navbar .navbar-toggler-icon {
+//     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+// }
+
 .menu {
     background-color: rgba(0, 0, 0, 0.9);
     font-family: 'Titillium Web', sans-serif;
@@ -47,17 +51,18 @@
         }
     }
 
-    .navbar-toggler:focus,
-    .navbar-toggler:active,
-    .navbar-toggler-icon:focus {
-        outline: none;
-        box-shadow: none;
-    }
+ 
+    /// NAVBAR TOGGLER ///
 
     .navbar-toggler-icon {
-        outline: none;
-        color: $secondary !important;
-        font-size: 1.7rem;
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,87,34)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
     }
 
     @include media-breakpoint-down(sm) {
@@ -81,6 +86,10 @@
                 height: 30%;
             }
         }
+
+        .navbar {
+            position: fixed;
+        }
     }
 
     @include media-breakpoint-up(md) {
@@ -102,11 +111,5 @@
             }
         }
 
-        .navbar-toggler-icon {
-            padding-top: 0.5rem;
-            outline: none;
-            color: $secondary !important;
-            font-size: 2.1rem;
-        }
     }
 }
