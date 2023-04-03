@@ -32,46 +32,66 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- THE NAVBAR SECTION ENDS -->
-    <!-- THE HERO SECTION -->
-    <!-- <section id="home" class="hero">
-    <div class="container">
-      <div class="row align-item-center text-white">
-        <h1 class="display-2">
-          <span class="display-2--intro">_ I'm <span class="redefined-color"> Anna</span></span>
-        </h1>
-        <h3 class="display-2--description lh-base">
-          | UX/UI Designer | Web Developer | Backend Developer |
-        </h3>
-
+    <!-- THE NAVBAR ENDS -->
+    <!--PROJECT 6-->
+    <section id="projects" class="project-6">
+      <div class="row text-center section-heading">
+        <h2 class="display-3 fw-bold">Stock Trade</h2>
+        <div class="heading-line mb-1"></div>
       </div>
-      <button type="button" class="btn btn2 btn-secondary">
-        <a class="btn-links" href="contact-us.html">
-          My projects
-        </a>
-      </button>
-      <button type="button" class="btn btn2 btn-secondary">
-        <a class="btn-links" href="contact-us.html">
-          Contact Me
-        </a>
-      </button>
-    </div>
-    </section> -->
-    <!-- THE HERO SECTION ENDS -->
+      <div class="container">
+        <div class="row">
+           <!--breadcrumb menu-->
+           <nav class="breadcrumb" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="portfolio.html">Portfolio</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Stock Trader</li>
+            </ol>
+          </nav>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="project-6__image project-img">
+              <img src="images/portfolio/Stock-Trader.jpg" alt="project-Stock Trade" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="project__content">
+              <p class="project-6__description">
+                Stock Trader is a web application that allows the user to buy and sell stocks. 
+                When the user buys stocks, the funds will be updated and the stocks purchased 
+                will show up under portfolio. This project was created using Vue routing, Vue resource, and Vuex.
+              </p>
+              <p class="project-6__description projects-tech">
+                HTML5 CSS Sass Vue routing Vue.js Vuex Git GitHub Netlify
+              </p>
+              <div class="prj__buttons">
+                <button type="button" class="btn btn8">
+                  <a class="btn-links" href="https://github.com/annaek/WEB2630_StockTrader">
+                    GitHub <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </button>
+                <button type="button" class="btn btn8">
+                  <a class="btn-links" href="https://startling-belekoy-653688.netlify.app/">
+                    Demo <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--PROJECT 6 ENDS-->
 
-
-
-               
    <!-- FOOTER -->
-  <footer id="footer" class="footer">
+   <footer id="footer" class="footer-bottom pt-5 pb-5">
     <div class="container">
       <div class="row text-white">
         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -79,9 +99,9 @@
             <img src="images/logo/logo.png" alt="Logo" class="footer-logo" />
             <h3 class="name-footer">Anna Ek</h3>
             <div class="social-icons align-item-center">
-              <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-square-github"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.facebook.com/anna.novozhilova.1"><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="https://github.com/annaek"><i class="fa-brands fa-square-github"></i></a>
+              <a href="https://www.linkedin.com/in/anna-ek01/"><i class="fa-brands fa-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -97,7 +117,7 @@
         </div>
       </div>
     </div>
-    <div class="footer-bottom pt-5 pb-2">
+    <div class="footer-bottom pt-1 pb-1">
       <div class="container">
         <div class="row text-center text-white">
           <div class="col-12">
@@ -112,8 +132,9 @@
     </div>
   </footer>
   <!-- FOOTER ENDS -->
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
-  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
   <!-- <script type="module" src="./javascripts/main.js"></script> -->
 </body>
