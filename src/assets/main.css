@@ -19926,7 +19926,7 @@ textarea.form-control-lg {
   border: 1.5px solid #FFFFFF !important;
   padding: 0.8rem 1.5rem;
   border-radius: 0 !important;
-  transition: all 0.3s ease-in-out;
+  position: relative;
 }
 .btn3 a {
   color: #FFFFFF;
@@ -19940,6 +19940,36 @@ textarea.form-control-lg {
 }
 .btn3:hover a {
   color: #000000;
+}
+.btn3 a:before,
+.btn3 a:after {
+  position: absolute;
+  content: "";
+  transition: all 0.25s;
+}
+.btn3 a:before {
+  border-bottom: 2px solid #FF5722;
+  border-left: 2px solid #FF5722;
+  width: 10%;
+  height: 33%;
+  left: -10px;
+  bottom: -10px;
+}
+.btn3 a:after {
+  border-top: 2px solid #FF5722;
+  border-right: 2px solid #FF5722;
+  width: 10%;
+  height: 33%;
+  top: -10px;
+  right: -10px;
+}
+.btn3 a:hover:before {
+  width: 115%;
+  height: 145%;
+}
+.btn3 a:hover:after {
+  width: 115%;
+  height: 145%;
 }
 @media (max-width: 767.98px) {
   .btn3 {
@@ -20415,7 +20445,7 @@ textarea.form-control-lg {
   background-color: rgba(0, 0, 0, 0.9);
   font-family: "Titillium Web", sans-serif;
   margin-bottom: 7rem;
-  position: fixed;
+  width: 100%;
 }
 .menu .container {
   padding: 0.5rem;
@@ -20445,16 +20475,15 @@ textarea.form-control-lg {
   width: 40%;
   height: 40%;
 }
-.menu .navbar-toggler:focus,
-.menu .navbar-toggler:active,
-.menu .navbar-toggler-icon:focus {
-  outline: none;
-  box-shadow: none;
-}
 .menu .navbar-toggler-icon {
-  outline: none;
-  color: #FF5722 !important;
-  font-size: 1.7rem;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,87,34)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 @media (max-width: 575.98px) {
   .menu .container {
@@ -20477,12 +20506,6 @@ textarea.form-control-lg {
   .menu .navbar-brand .nav-logo {
     width: 30%;
     height: 30%;
-  }
-  .menu .navbar-toggler-icon {
-    padding-top: 0.5rem;
-    outline: none;
-    color: #FF5722 !important;
-    font-size: 2.1rem;
   }
 }
 
@@ -20568,7 +20591,7 @@ textarea.form-control-lg {
     padding: 0;
   }
   .hero .hero-btn {
-    display: none;
+    visibility: hidden;
   }
   .hero .hero-follow-links {
     width: 100%;
@@ -20676,6 +20699,7 @@ textarea.form-control-lg {
 .about {
   background-color: #3A3A3A;
   padding: 10rem 0 3rem 0;
+  margin-top: 0;
 }
 .about .display-3 {
   color: #FFFFFF;
@@ -20769,7 +20793,7 @@ textarea.form-control-lg {
 .contact .col {
   flex: 1;
   padding: 0;
-  border: solid 1px #3A3A3A;
+  border: solid 1px #B1AEAE;
 }
 .contact .form-2 {
   background-color: #B1AEAE;

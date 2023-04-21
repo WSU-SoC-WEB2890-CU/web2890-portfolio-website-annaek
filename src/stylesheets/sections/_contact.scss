@@ -1,5 +1,5 @@
-@use '../custom'as *;
-@use '../components/mixins'as *;
+@use '../custom' as *;
+@use '../components/mixins' as *;
 
 
 .contact {
@@ -17,7 +17,7 @@
     .col {
         flex: 1;
         padding: 0;
-        border: solid 1px $mid-grey;
+        border: solid 1px $little-light-grey;
     }
 
     .form-2 {
@@ -38,10 +38,10 @@
         text-decoration-color: $secondary;
     }
 
-    .contact-icons{
+    .contact-icons {
         color: $primary;
         font-size: 1.3rem;
-        
+
     }
 
     ul>li {
@@ -84,14 +84,12 @@
         padding-top: 0;
     }
 
-
-
     .form-group {
         position: relative;
         margin-bottom: 1rem;
         padding-bottom: 4rem;
 
-        .btn {    
+        .btn {
             position: absolute;
             bottom: 0;
             left: 0;
