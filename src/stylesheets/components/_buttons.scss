@@ -48,7 +48,6 @@
     }
 }
 
-
 .btn3 {
     //background-color: $secondary !important;
     color: $white !important;
@@ -75,8 +74,6 @@
         }
     }
 
-
-    //animation
     a:before,
     a:after {
         position: absolute;
@@ -103,15 +100,14 @@
     }
 
     a:hover:before {
-        width: 115%;
-        height: 145%;
+        width: 112%;
+        height: 140%;
     }
 
     a:hover:after {
-        width: 115%;
-        height: 145%;
+        width: 112%;
+        height: 140%;
     }
-
 
     @include media-breakpoint-down(md) {
         padding: 0.8rem 1rem;
@@ -165,7 +161,6 @@
 }
 
 .btn5 {
-    //background-color: $secondary !important;
     color: $white !important;
     border: 1.5px solid $white !important;
     padding: 0.8rem 1.5rem;

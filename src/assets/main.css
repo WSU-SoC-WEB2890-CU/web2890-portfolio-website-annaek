@@ -19964,12 +19964,12 @@ textarea.form-control-lg {
   right: -10px;
 }
 .btn3 a:hover:before {
-  width: 115%;
-  height: 145%;
+  width: 112%;
+  height: 140%;
 }
 .btn3 a:hover:after {
-  width: 115%;
-  height: 145%;
+  width: 112%;
+  height: 140%;
 }
 @media (max-width: 767.98px) {
   .btn3 {
